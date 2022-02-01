@@ -1,24 +1,11 @@
-# README
+# HR Employee Administration System
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Required:
 
-Things you may want to cover:
+    1-Generate the models
 
-* Ruby version
+    2-Implement index for each controller
 
-* System dependencies
+    3-Implement the basic view of the landing page
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
