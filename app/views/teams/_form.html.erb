@@ -1,0 +1,38 @@
+<%= form_with(model: team) do |form| %>
+  <% if team.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(team.errors.count, "error") %> prohibited this team from being saved:</h2>
+
+      <ul>
+        <% team.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field form-group mb-3">
+    <%= form.number_field :team_id, class:"form-control", placeholder:"Team Id"%>
+  </div>
+
+  <div class="field form-group mb-3">
+    <%= form.text_field :name, class:"form-control", placeholder:"Name" %>
+  </div>
+
+  <div class="field form-group mb-3">
+    <%= form.text_area :description, class:"form-control", placeholder:"Description" %>
+  </div>
+
+  <div class="field form-group mb-3">
+    <%= form.text_field :members, class:"form-control", placeholder:"Members" %>
+  </div>
+
+  <div class="field form-group mb-3">
+    <%= form.text_field :team_lead, class:"form-control", placeholder:"Team Lead" %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit class:"btn btn-secondary" %>
+  </div>
+<% end %>
+

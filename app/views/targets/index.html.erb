@@ -1,0 +1,41 @@
+<h1>Targets List</h1>
+
+<table class="table table-striped table-bordered table-hover">
+
+  <thead class="table-dark">
+  <tr>
+    <th>Title</th>
+    <th>Description</th>
+    <th>Start Date</th>
+    <th>Finish Date</th>
+    <th>Attribute</th>
+    <th>Team</th>
+    <th>Status</th>
+    <th colspan="3"></th>
+  </tr>
+  </thead>
+
+  <tbody>
+  <% @targets.each do |target|%>
+  <tr>
+    <td><%= target.title %></td>
+    <td><%= target.description %></td>
+    <td><%= target.start_date %></td>
+    <td><%= target.finish_date %></td>
+    <td><%= target.attribute_name %></td>
+    <td><%= target.team %></td>
+    <td><%= target.status %></td>
+    <td><%= link_to 'Show', target %></td>
+    <td><%= link_to 'Edit',  edit_target_path(target) %></td>
+    <td><%= link_to 'Destroy', target, method: :delete, data: { confirm: 'Are you sure?'} %></td>
+  </tr>
+
+  <%end%>
+
+  </tbody>
+
+</table>
+<br>
+
+
+<%= link_to "New target", new_target_path, class:"btn btn-secondary" %>
