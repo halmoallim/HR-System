@@ -8,7 +8,6 @@ class Employee < ApplicationRecord
     validates :employment_status, presence: true, length: {maximum:20}
 
     belongs_to :team
-    belongs_to :division
 
 
 
