@@ -6,4 +6,6 @@ class Division < ApplicationRecord
 
     has_one :employee
     has_many :teams
+    belongs_to :employee
+
 end
