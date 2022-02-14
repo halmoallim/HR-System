@@ -23,12 +23,10 @@
     <%= form.text_area :description, class:"form-control", placeholder:"Description" %>
   </div>
 
-  <div class="field form-group mb-3">
-    <%= form.text_field :team_lead, class:"form-control", placeholder:"Team Lead" %>
-  </div>
+  
 
    <div class="field form-group mb-3" class="form-control">
-    <%= form.select :employee_id,Employee.all.pluck(:name,:id),{prompt:'Team Lead'},{class: "form-control"}%>
+    <%= form.select :team_lead,Employee.all.pluck(:name,:id),{prompt:'Team Lead'},{class: "form-control"}%>
   </div>
 
   <div class="field form-group mb-3" class="form-control">
