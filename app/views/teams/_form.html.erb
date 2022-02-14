@@ -26,7 +26,7 @@
   
 
    <div class="field form-group mb-3" class="form-control">
-    <%= form.select :team_lead,Employee.all.pluck(:name,:id),{prompt:'Team Lead'},{class: "form-control"}%>
+    <%= form.select :team_lead,Employee.all.pluck(:name),{prompt:'Team Lead'},{class: "form-control"}%>
   </div>
 
   <div class="field form-group mb-3" class="form-control">
