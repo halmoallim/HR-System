@@ -23,7 +23,6 @@
     <%= form.text_field :manager, class:"form-control", placeholder:"Manager" %>
   </div>
 
- 
   <div class="field form-group mb-3" class="form-control">
     <%= form.select :employee_id,Employee.all.pluck(:name,:id),{prompt:'Manager'},{class: "form-control"}%>
   </div>
